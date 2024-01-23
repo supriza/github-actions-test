@@ -1,0 +1,13 @@
+name: Github runner recon
+run-name: Workflow to inspect the recon runner environment
+on: push
+jobs:
+  runner-recon:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run printenv
+      run : printenv
+    - name: Show procs
+      run: ps aux
+    - name: Show dir structure
+      run: ls -alR .
