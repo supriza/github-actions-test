@@ -2,7 +2,7 @@ name: github-actions-command-injection
 run-name: Github Actions command injection example
 on: 
   pull_request:
-      types: opened
+      types: [opened, reopened]
 jobs:
   new-pr-opened:
     runs-on: ubuntu-latest
