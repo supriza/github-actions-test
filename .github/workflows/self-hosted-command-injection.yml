@@ -1,0 +1,11 @@
+name: self-hosted-command-injection
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  comment-action:
+    runs-on: self-hosted
+    steps:
+      - name: Echo Issue Comment
+        run: |
+          echo ${{ github.event.comment.body }}
