@@ -1,0 +1,10 @@
+name: 'Leak Secret'
+description: 'GH Action to leak secrets'
+inputs:
+  data:  # id of input
+    description: 'input data'
+    required: true
+    default: 'leak me'
+runs:
+  using: 'node20'
+  main: 'index.js'

@@ -1,0 +1,11 @@
+name: github-actions-command-injection
+run-name: Github Actions command injection example
+on: 
+  pull_request:
+      types: [opened, reopened]
+jobs:
+  new-pr-opened:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "New PR opened from ${{ github.head_ref }}"
