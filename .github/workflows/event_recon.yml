@@ -1,0 +1,11 @@
+name: github.event.workflow_run recon
+on:
+  workflow_run:
+    workflows: [Run Tests]
+    types:
+      - completed
+jobs:
+  print-data:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "echo ${{ github.event.workflow_run }}"
