@@ -1,0 +1,9 @@
+name: Run Tests
+on:
+  pull_request:
+
+jobs:
+  run-test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "echo 'GREAT SUCCESS!'"
