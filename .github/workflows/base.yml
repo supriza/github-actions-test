@@ -1,6 +1,6 @@
 name: Base Workflow
 on:
-  pull_request_target:
+  pull_request:
 
 jobs:
   whoami:
