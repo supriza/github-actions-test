@@ -4,7 +4,7 @@ on:
 
 jobs:
   whoami:
-    name: I'm base
+    name: I'm fork
     runs-on: ubuntu-latest
     steps:
-      - run: echo "I'm base"
+      - run: echo "I'm fork"
