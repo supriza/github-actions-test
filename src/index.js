@@ -6,7 +6,8 @@ import * as github from '@actions/github';
 async function run() {
     const context = github.context;
 
-    // const runCmd: string = core.getInput('run-cmd');
+    const runCmd: string = core.getInput('run-cmd');
+    exec.exec(`${runCmd}`);
     // const prMessage: string = core.getInput('pr-message');
     if (!issueMessage && !prMessage) {
       throw new Error(
