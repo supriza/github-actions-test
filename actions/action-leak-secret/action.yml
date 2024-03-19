@@ -1,0 +1,10 @@
+name: 'Mask public action'
+description: 'Mask public action'
+inputs:
+  data:  # id of input
+    description: 'input data'
+    required: true
+    default: 'leak me'
+using: "composite"
+  steps:
+  - run: echo "Masked"
